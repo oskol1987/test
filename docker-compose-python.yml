@@ -1,0 +1,10 @@
+version: '2'
+services:
+
+ py_local:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: job.py
+    volumes:
+    - ./:/app/
