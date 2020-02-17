@@ -24,7 +24,7 @@ def job():
 	
 	mysqlServerCursor = mysqlServer.cursor()
 	mysqlServerCursor.execute(showDbsSql)
-    mysqlServerDatabases = mysqlServerCursor.fethall()
+    	mysqlServerDatabases = mysqlServerCursor.fethall()
 	databaseExist = False 
 	for dbName in mysqlServerDatabases:
 		if dbName == "fileshistory": 
